@@ -17,5 +17,5 @@ import java.util.function.Consumer
         println("---------------")
 
         list.forEach(System.out::println)
-}
+    }
 
