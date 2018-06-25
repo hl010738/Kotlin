@@ -1,19 +1,19 @@
-package com.kotlin.composite
+package com.kotlin.demo4
 
 open class Parent{
     open fun name(){
-        println("parent")
+        println("com.kotlin.composite.parent")
     }
 }
 
 class Child: Parent(){
     override fun name(){
         super.name()
-        println("child")
+        println("com.kotlin.composite.child")
     }
 }
 
 fun main(args: Array<String>) {
-    var c:Parent = Parent()
+    var c: Parent = Parent()
     c.name()
 }

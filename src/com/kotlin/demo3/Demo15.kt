@@ -1,4 +1,4 @@
-package com.kotlin.`object`
+package com.kotlin.demo3
 
 
 //泛型函数

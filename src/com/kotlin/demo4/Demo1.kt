@@ -1,5 +1,7 @@
-package com.kotlin.dataclass
+package com.kotlin.demo4
 
+
+//data class 数据类
 data class Person(val name: String, var age: Int, var address: String)
 
 fun main(args: Array<String>) {

@@ -1,7 +1,7 @@
-package com.kotlin.`object`
+package com.kotlin.demo3
 
 
-open class Fruit{
+open class Fruit1{
     open fun name(){
         println("Fruit")
     }
@@ -11,14 +11,14 @@ open class Fruit{
     }
 }
 
-open class Orange: Fruit(){
+open class Orange: Fruit1(){
     final override fun name() {
         println("orange")
     }
 }
 
 
-class Apple: Fruit(){
+class Apple1: Fruit1(){
     override fun name(){
         println("apple")
     }

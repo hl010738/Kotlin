@@ -1,4 +1,4 @@
-package com.kotlin.`object`
+package com.kotlin.demo3
 
 
 class Student(private var name: String, private var age: Int, private var clazz: String){

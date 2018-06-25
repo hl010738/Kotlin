@@ -1,9 +1,9 @@
-
+package com.kotlin.demo3
 
 open class parent(name: String){
 }
 
-class child2: parent{
+class child2: parent {
     constructor(name: String): super(name)
 }
 

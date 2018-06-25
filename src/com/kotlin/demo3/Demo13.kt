@@ -1,4 +1,4 @@
-package com.kotlin.demo13.`object`
+package com.kotlin.demo3
 
 
 //如果泛型类只是将泛型类型作为返回类型，可以使用out关键字
@@ -17,40 +17,40 @@ open class Apple: Fruit()
 
 class ApplePear: Apple()
 
-class FruitProducer: Producer<Fruit>{
+class FruitProducer: Producer<Fruit> {
     override fun produce(): Fruit {
         println("fruit producer")
         return Fruit()
     }
 }
 
-class AppleProducer: Producer<Apple>{
+class AppleProducer: Producer<Apple> {
     override fun produce(): Apple {
         println("apple producer")
         return Apple()
     }
 }
 
-class ApplePearProducer: Producer<ApplePear>{
+class ApplePearProducer: Producer<ApplePear> {
     override fun produce(): ApplePear {
         println("apple pear producer")
         return ApplePear()
     }
 }
 
-class HumanConsumer: Consumer<Fruit>{
+class HumanConsumer: Consumer<Fruit> {
     override fun consume(t: Fruit) {
         println("Human consume fruit")
     }
 }
 
-class ManConsumer: Consumer<Apple>{
+class ManConsumer: Consumer<Apple> {
     override fun consume(t: Apple) {
         println("Man consume apple")
     }
 }
 
-class boyConsumer: Consumer<ApplePear>{
+class boyConsumer: Consumer<ApplePear> {
     override fun consume(t: ApplePear) {
         println("boy comsume apple pear")
     }
