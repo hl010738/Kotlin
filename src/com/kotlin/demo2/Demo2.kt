@@ -8,6 +8,16 @@ class OutClass{
     inner class InnerClass{
         fun innerClassMethod() = this@OutClass.str
     }
+
+    //局部嵌套类
+    fun getName(): String{
+        class LocalNestedClass(){
+            val name = "My test"
+        }
+
+        var localNestedClass = LocalNestedClass()
+        return localNestedClass.name
+    }
 }
 
 fun main(args: Array<String>) {
