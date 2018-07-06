@@ -4,7 +4,6 @@ import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty
 
 //提供委托
-
 class A7{
     val name: String by DelegateLauncher()
     val address: String by DelegateLauncher()
