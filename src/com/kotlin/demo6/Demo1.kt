@@ -3,6 +3,12 @@ package com.kotlin.demo6
 //默认参数
 fun test(a:Int = 0, b:Int = 1) = println(a - b)
 
+//可变参数
+fun test3(vararg string: String){
+    println(string.javaClass)
+    string.forEach { println(it) }
+}
+
 fun main(args: Array<String>) {
     test() //没有传递参数，使用默认参数
     test(2) //按顺序匹配参数a=2
@@ -12,6 +18,15 @@ fun main(args: Array<String>) {
 
     println(A().method(5))
     println(B().method(6))
+
+    println("---------------")
+
+    test3("a", "b", "c")
+
+    test3(string = *arrayOf("a", "b", "c"))
+
+    var args = arrayOf("a", "b", "c")
+    test3(*args)
 }
 
 //如果一个默认参数位于其他无默认值的参数之前，那么默认值只能通过在调用函数时显示指定参数名的方式来使用.
