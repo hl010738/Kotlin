@@ -1,6 +1,6 @@
 package com.kotlin.demo6
 
-//Lamda表达式列子
+//Lamda表达式例子
 
 fun String.filter(predicate: (Char) -> Boolean): String{
     var buff = StringBuffer()
