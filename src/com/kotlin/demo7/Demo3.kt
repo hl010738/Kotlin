@@ -1,7 +1,7 @@
 package com.kotlin.demo7
 
 /*
-    集合
+    集合 Map
  */
 
 fun main(args: Array<String>) {
