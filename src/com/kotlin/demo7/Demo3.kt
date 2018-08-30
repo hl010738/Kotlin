@@ -25,4 +25,12 @@ fun main(args: Array<String>) {
 
     println(readOnly)
 
+    println("-----------------")
+
+    val map = hashMapOf("a" to 1, "b" to 2, "c" to 3)
+    println(map["a"])
+
+    val map2 = HashMap(map)
+    println(map2)
+
 }
