@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 
 /*
-    Java 代码 调用 Kotlin扩展方法
+    Java 代码 调用Kotlin扩展方法
  */
 public class Test1 {
     public static void main(String[] args) {
